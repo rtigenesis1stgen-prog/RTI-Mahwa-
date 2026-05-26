@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RTI Manhwa</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+}
+
+/* First Page */
+#home{
+    background:black;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+button{
+    padding:20px 40px;
+    font-size:28px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    background:white;
+    color:black;
+    font-weight:bold;
+}
+
+/* Second Page */
+#second{
+    display:none;
+    height:100vh;
+    background:white;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+h1{
+    font-size:50px;
+    background:linear-gradient(red,blue,purple,orange);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+p{
+    font-size:30px;
+    background:linear-gradient(green,pink,blue);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+</style>
+</head>
+
+<body>
+
+<!-- First Page -->
+<div id="home">
+    <button onclick="openPage()">RTI MANHWA<br>CLICK TO VISIT</button>
+</div>
+
+<!-- Second Page -->
+<div id="second">
+    <h1>RELEASE ON 1 APRIL</h1>
+    <p>STAY TUNE ON WEBTOON</p>
+</div>
+
+<script>
+function openPage(){
+    document.getElementById("home").style.display="none";
+    document.getElementById("second").style.display="flex";
+}
+</script>
+
+</body>
+</html>
