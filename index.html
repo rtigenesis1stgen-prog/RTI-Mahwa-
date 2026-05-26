@@ -1,81 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>RTI Manhwa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body{
-    margin:0;
-    padding:0;
-    font-family:Arial;
-}
+    <title>RTI Mahwa</title>
 
-/* First Page */
-#home{
-    background:black;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
+    <meta name="description" content="RTI Mahwa official manhwa website">
 
-button{
-    padding:20px 40px;
-    font-size:28px;
-    border:none;
-    border-radius:15px;
-    cursor:pointer;
-    background:white;
-    color:black;
-    font-weight:bold;
-}
+    <style>
 
-/* Second Page */
-#second{
-    display:none;
-    height:100vh;
-    background:white;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    text-align:center;
-}
+        body{
+            margin:0;
+            padding:0;
+            background-color:black;
+            color:white;
+            font-family:Arial, sans-serif;
+            text-align:center;
+        }
 
-h1{
-    font-size:50px;
-    background:linear-gradient(red,blue,purple,orange);
-    -webkit-background-clip:text;
-    color:transparent;
-}
+        header{
+            background:#111;
+            padding:20px;
+            box-shadow:0 0 10px cyan;
+        }
 
-p{
-    font-size:30px;
-    background:linear-gradient(green,pink,blue);
-    -webkit-background-clip:text;
-    color:transparent;
-}
-</style>
+        h1{
+            color:cyan;
+            font-size:40px;
+        }
+
+        p{
+            color:lightgray;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 25px;
+            background:cyan;
+            color:black;
+            text-decoration:none;
+            font-weight:bold;
+            border-radius:10px;
+        }
+
+        .btn:hover{
+            background:white;
+        }
+
+        .chapter{
+            background:#111;
+            margin:20px;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:0 0 10px #00ffff44;
+        }
+
+        img{
+            width:250px;
+            border-radius:15px;
+            margin-top:10px;
+        }
+
+        footer{
+            margin-top:40px;
+            padding:20px;
+            background:#111;
+            color:gray;
+        }
+
+    </style>
 </head>
 
 <body>
 
-<!-- First Page -->
-<div id="home">
-    <button onclick="openPage()">RTI MANHWA<br>CLICK TO VISIT</button>
-</div>
+    <header>
+        <h1>RTI Mahwa</h1>
+        <p>Official Manhwa Reading Website</p>
 
-<!-- Second Page -->
-<div id="second">
-    <h1>RELEASE ON 1 APRIL</h1>
-    <p>STAY TUNE ON WEBTOON</p>
-</div>
+        <a class="btn" href="#chapters">
+            Read Now
+        </a>
+    </header>
 
-<script>
-function openPage(){
-    document.getElementById("home").style.display="none";
-    document.getElementById("second").style.display="flex";
-}
-</script>
+    <br><br>
+
+    <section id="chapters">
+
+        <div class="chapter">
+            <h2>Release 1</h2>
+
+            <img src="https://via.placeholder.com/250x350.png?text=RTI+Mahwa" alt="Manhwa Cover">
+
+            <p>
+                Welcome to RTI Mahwa official website.
+            </p>
+
+            <a class="btn" href="#">
+                Start Reading
+            </a>
+        </div>
+
+        <div class="chapter">
+            <h2>Coming Soon</h2>
+
+            <p>
+                New chapters will be uploaded soon.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 RTI Mahwa | All Rights Reserved
+    </footer>
 
 </body>
 </html>
